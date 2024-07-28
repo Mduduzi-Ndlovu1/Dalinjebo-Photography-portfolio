@@ -27,7 +27,7 @@ const Navbar = () => {
             {isOpen ? <RiCloseLine /> : <RiMenuLine />}
           </div>
         </div>
-        <ul className={`nav__links ${isOpen ? 'open' : ''}`} id="nav-links">
+        <ul className={`nav__links ${isOpen ? 'open' : ''} text-base`} id="nav-links">
           {navlists.map((item) => (
             <li key={item.id} onClick={handleNavLinkClick}>
               <Link to={item.link}>{item.name}</Link>

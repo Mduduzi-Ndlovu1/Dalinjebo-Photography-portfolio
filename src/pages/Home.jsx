@@ -38,7 +38,7 @@ const Home = () => {
   }, []);
   return (
     <main>
-      <div className="section__container about__container" id="about">
+      <div className="section__container" id="about">
         <h2 className="section__header">
            ~ WE CAPTURE THE MOMENTS ~
         </h2>
