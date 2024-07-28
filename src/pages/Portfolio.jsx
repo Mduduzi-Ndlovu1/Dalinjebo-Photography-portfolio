@@ -2,7 +2,13 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    
+    <div>
+      <h2 className="section__header mt-6">
+           ~ My Portfolio ~
+        </h2>
+        <div></div>
+    </div>
   )
 }
 
