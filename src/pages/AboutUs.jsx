@@ -1,8 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ScrollReveal from 'scrollreveal';
+
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
 
 const AboutUs = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".about__container .section__header", {
+      ...scrollRevealOption,
+    });
+    ScrollReveal().reveal(".about__container .section__description", {
+      ...scrollRevealOption,
+      delay: 500,
+      interval: 500
+    });
+    ScrollReveal().reveal(".about__container img", {
+      ...scrollRevealOption,
+      delay: 1500,
+    });
+
+    ScrollReveal().reveal(".aboutUs .section__header", {
+      ...scrollRevealOption,
+    });
+    ScrollReveal().reveal(".aboutUs .section__header", {
+      ...scrollRevealOption,
+      delay: 500,
+    });
+    ScrollReveal().reveal(".aboutUs .section__description", {
+      duration: 1000,
+      delay: 1000,
+      interval: 500
+    });
+  }, []);
   return (
-    <section id="about">
+    <section id="about" className='aboutUs'>
       <h2 className="section__header mt-6">
            ~ About Me ~
         </h2>
@@ -26,7 +60,7 @@ const AboutUs = () => {
         I firmly believe that this is just the beginning. The world of photography is vast, and I am eager to explore its depths further. My journey is a testament to the power of passion and perseverance, and I am excited about the future opportunities and experiences that lie ahead. Together, we can capture moments that tell compelling stories and create lasting memories.
         </p>
       </div>
-      <div className='flex-1 justify-center items-center p-5 h-full hidden lg:flex md:flex'>
+      <div className='flex-1 justify-center items-center p-5 h-full hidden lg:flex md:flex img'>
         <img src="src/assets/Radient (1).png" alt="Radient imagery" />
       </div>
 
