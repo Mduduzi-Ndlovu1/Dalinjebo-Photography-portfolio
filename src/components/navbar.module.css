@@ -1,0 +1,11 @@
+li {
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    transition: all 2s ease-in-out;
+    
+}
+
+li:hover{
+    border-bottom: 2px solid white;
+}
