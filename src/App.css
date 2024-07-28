@@ -21,6 +21,7 @@
   padding: 5rem 1rem;
 }
 
+
 .section__header {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -70,6 +71,15 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  min-height: 600px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),
+    url("src/assets/Logo and title.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -157,6 +167,14 @@ font-size: 3rem;
 .portfolio__card {
   position: relative;
   isolation: isolate;
+  width: auto;
+  height: auto;
+}
+
+.portfolio__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio__card::after {
@@ -170,15 +188,20 @@ font-size: 3rem;
 }
 
 .portfolio__card:nth-child(1)::after {
-  content: "Portraits";
+  content: "Product Photography";
 }
 
 .portfolio__card:nth-child(2)::after {
   content: "Weddings";
+  color: #171717;
 }
 
 .portfolio__card:nth-child(3)::after {
-  content: "Fashions";
+  content: "Commissioned Portraits";
+}
+.portfolio__card:nth-child(4)::after {
+  content: "Fashion Photography";
+  color: #171717;
 }
 
 .portfolio__content {
@@ -202,7 +225,7 @@ font-size: 3rem;
 
 .service {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("assets/service.jpg");
+    url("src/assets/Dali Logo.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
