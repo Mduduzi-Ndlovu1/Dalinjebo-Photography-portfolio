@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import navlists from '../constants';
 
 const Navbar = () => {
@@ -19,17 +19,17 @@ const Navbar = () => {
       <nav>
         <div className="nav__header">
           <div className="nav__logo">
-            <a href="/">
+            <Link to="/">
               <img src="src/assets/Dali Logo.png" alt="logo-white" />
-            </a>
+            </Link>
           </div>
           <div className="nav__menu__btn" id="menu-btn" onClick={handleMenuToggle}>
             {isOpen ? <RiCloseLine /> : <RiMenuLine />}
           </div>
         </div>
-        <ul className={`nav__links ${isOpen ? 'open' : ''}`} id="nav-links" onClick={handleNavLinkClick}>
+        <ul className={`nav__links ${isOpen ? 'open' : ''}`} id="nav-links">
           {navlists.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} onClick={handleNavLinkClick}>
               <Link to={item.link}>{item.name}</Link>
             </li>
           ))}
