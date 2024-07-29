@@ -1,35 +1,71 @@
-import React from 'react'
-import images from '../utils/index'
-import { Swiper, SwiperSlide} from 'swiper/react'
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import "../pages/portfolio.module.css"
-
+import "../pages/portfolio.module.css";
+import images,{
+  selfProtraitImages,
+  FashionAncientImages,
+  productBrands,
+  weddingPhotos,
+} from '../utils/index';
 
 const Portfolio = () => {
+  const [category, setCategory] = useState("fashion");
+
+  const getImagesByCategory = () => {
+    switch (category) {
+      case "portraits":
+        return selfProtraitImages;
+      case "fashion":
+        return FashionAncientImages;
+      case "product":
+        return productBrands;
+      case "wedding":
+        return weddingPhotos;
+      default:
+        return [];
+    }
+  };
+
+  const categoryData = getImagesByCategory();
+
+  const getCategoryTitle = () => {
+    switch (category) {
+      case "portraits":
+        return "Commissioned Portraits";
+      case "fashion":
+        return "Fashion Photography";
+      case "product":
+        return "Product Photography";
+      case "wedding":
+        return "Wedding Photography";
+      default:
+        return "";
+    }
+  };
+
   return (
     <div>
       <h2 className="section__header mt-6">
         ~ My Portfolio ~
       </h2>
-      <div className="section__container mt-[-20px] overflow-hidden ">
+      <div className="section__container mt-[-20px] overflow-hidden">
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
-          centeredSlides ={true}
-          loop ={true}
+          centeredSlides={true}
+          loop={true}
           slidesPerView={'2'}
-          coverflowEffect={
-            {
-              rotate: 0,
-              stretch: 0,
-              depth: 20,
-              modifier: 2.5,
-            }
-          }
+          coverflowEffect={{
+            rotate: 10,
+            stretch: 5,
+            depth: 300,
+            modifier: 2.5,
+          }}
           pagination={{
             el: '.swiper-pagination',
             clickable: true
@@ -44,14 +80,14 @@ const Portfolio = () => {
             Pagination,
             Navigation
           ]}
-          className='swiper_container overflow-hidden object-contain' 
+          className='swiper_container overflow-hidden object-contain'
         >
           {images.map((image) => (
             <SwiperSlide key={image.id}>
               <img
                 src={image.src}
                 alt={`${image.name} portfolio`}
-                className="portfolio__image"
+                className="object-cover w-full h-full"
               />
             </SwiperSlide>
           ))}
@@ -65,13 +101,43 @@ const Portfolio = () => {
             </div>
             <div className="swiper-pagination"></div>
           </div>
-
         </Swiper>
       </div>
-      
-      
-    </div>
-  )
-}
 
-export default Portfolio
+      {/* Buttons */}
+      <div className='flex w-full justify-center items-center gap-5 text-center p-8 flex-wrap md:flex-1 sm:flex-2'>
+        <button className="btn btn--primary" onClick={() => setCategory("portraits")}>Commissioned Portraits</button>
+        <button className="btn btn--primary" onClick={() => setCategory("fashion")}>Fashion Photography</button>
+        <button className="btn btn--primary" onClick={() => setCategory("product")}>Product Photography</button>
+        <button className="btn btn--primary" onClick={() => setCategory("wedding")}>Wedding Photography</button>
+      </div>
+
+      {/* Category Title */}
+      <h3 className="category__title mt-6 text-center">
+        {getCategoryTitle()}
+      </h3>
+
+      {/* Display Images in a Stylish Way with Separators */}
+      <div className="image-gallery mt-6">
+        {categoryData.map((group, index) => (
+          <div key={index} className="image-group">
+            <div className="separator"></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+              {group.images.map((image, idx) => (
+                <div key={idx} className="image-container relative overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src={image}
+                    alt="portfolio"
+                    className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Portfolio;

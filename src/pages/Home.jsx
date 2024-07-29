@@ -55,25 +55,25 @@ const Home = () => {
         <h2 className="section__header">~ PORTFOLIO ~</h2>
         <div className="portfolio__grid">
             <div className="portfolio__card">
-                <img src="src\assets\images\Product Brand\Kallahari\IMG_3587.jpeg" alt="portfolio"/>
+                <img src="/assets/images/Product Brand/Kallahari/k1.jpeg" alt="portfolio"/>
                 <div className="portfolio__content">
                     <button className="btn">VIEW PORTFOLIO</button>
                 </div>
             </div>
             <div className="portfolio__card">
-                <img src="src\assets\images\Wedding\White Wedding One\P1010094.jpeg" alt="portfolio"/>
+                <img src="/assets\images\Wedding\White Wedding One\w1_1.jpeg" alt="portfolio"/>
                 <div className="portfolio__content">
                     <button className="btn">VIEW PORTFOLIO</button>
                 </div>
             </div>
             <div className="portfolio__card">
-                <img src="src\assets\images\Self Protrait\Person One\IMG_1714.jpeg" alt="portfolio"/>
+                <img src="/assets\images\Self Protrait\Person One\p1.jpeg" alt="portfolio"/>
                 <div className="portfolio__content">
                     <button className="btn">VIEW PORTFOLIO</button>
                 </div>
             </div>
             <div className="portfolio__card">
-                <img src="src\assets\images\Fashion\Ancients\IMG_0412.jpeg" alt="portfolio"/>
+                <img src="/assets\images\Fashion\Ancients\A1.jpeg" alt="portfolio"/>
                 <div className="portfolio__content">
                     <button className="btn">VIEW PORTFOLIO</button>
                 </div>
