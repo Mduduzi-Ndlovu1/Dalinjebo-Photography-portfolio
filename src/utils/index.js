@@ -240,6 +240,45 @@ const productBrands = [
     }
 ];
 
+const galleryImages = [
+    { id: 'fashion-1', src: FashionImages[0], name: 'Fashion' },
+    { id: 'fashion-2', src: FashionImages[1], name: 'Fashion' },
+    { id: 'fashion-3', src: FashionImages[2], name: 'Fashion' },
+    { id: 'golden-horn-1', src: goldenHornImages[0], name: 'Golden Horn' },
+    { id: 'golden-horn-2', src: goldenHornImages[1], name: 'Golden Horn' },
+    { id: 'golden-horn-3', src: goldenHornImages[2], name: 'Golden Horn' },
+    { id: 'kallahari-1', src: kallahariImages[0], name: 'Kallahari' },
+    { id: 'kallahari-2', src: kallahariImages[1], name: 'Kallahari' },
+    { id: 'kallahari-3', src: kallahariImages[2], name: 'Kallahari' },
+    { id: 'self-protrait-one-1', src: selfProtraitOneimages[0], name: 'Self Portrait One' },
+    { id: 'self-protrait-one-2', src: selfProtraitOneimages[1], name: 'Self Portrait One' },
+    { id: 'self-protrait-one-3', src: selfProtraitOneimages[2], name: 'Self Portrait One' },
+    { id: 'self-protrait-two-1', src: selfProtraitTwoimages[0], name: 'Self Portrait Two' },
+    { id: 'self-protrait-two-2', src: selfProtraitTwoimages[1], name: 'Self Portrait Two' },
+    { id: 'self-protrait-two-3', src: selfProtraitTwoimages[2], name: 'Self Portrait Two' },
+    { id: 'self-protrait-three-1', src: selfProtraitThreeimages[0], name: 'Self Portrait Three' },
+    { id: 'self-protrait-three-2', src: selfProtraitThreeimages[1], name: 'Self Portrait Three' },
+    { id: 'self-protrait-three-3', src: selfProtraitThreeimages[2], name: 'Self Portrait Three' },
+    { id: 'self-protrait-four-1', src: selfProtraitFourimages[0], name: 'Self Portrait Four' },
+    { id: 'self-protrait-four-2', src: selfProtraitFourimages[1], name: 'Self Portrait Four' },
+    { id: 'self-protrait-four-3', src: selfProtraitFourimages[2], name: 'Self Portrait Four' },
+    { id: 'self-protrait-five-1', src: selfProtraitFiveimages[0], name: 'Self Portrait Five' },
+    { id: 'self-protrait-five-2', src: selfProtraitFiveimages[1], name: 'Self Portrait Five' },
+    { id: 'self-protrait-five-3', src: selfProtraitFiveimages[2], name: 'Self Portrait Five' },
+    { id: 'self-protrait-six-1', src: selfProtraitSiximages[0], name: 'Self Portrait Six' },
+    { id: 'self-protrait-six-2', src: selfProtraitSiximages[1], name: 'Self Portrait Six' },
+    { id: 'self-protrait-six-3', src: selfProtraitSiximages[2], name: 'Self Portrait Six' },
+    { id: 'matric-dance-1', src: matricDanceImages[0], name: 'Matric Dance' },
+    { id: 'matric-dance-2', src: matricDanceImages[1], name: 'Matric Dance' },
+    { id: 'matric-dance-3', src: matricDanceImages[2], name: 'Matric Dance' },
+    { id: 'traditional-wed-one-1', src: traditionalWedOne[0], name: 'Traditional Wedding One' },
+    { id: 'traditional-wed-one-2', src: traditionalWedOne[1], name: 'Traditional Wedding One' },
+    { id: 'traditional-wed-one-3', src: traditionalWedOne[2], name: 'Traditional Wedding One' },
+    { id: 'white-wed-one-1', src: whiteWedOne[0], name: 'White Wedding One' },
+    { id: 'white-wed-one-2', src: whiteWedOne[1], name: 'White Wedding One' },
+    { id: 'white-wed-one-3', src: whiteWedOne[2], name: 'White Wedding One' }
+];
+
 
 
 const allImages = [
@@ -250,4 +289,4 @@ const allImages = [
 ]
 
 
-export default allImages;
+export default galleryImages;
