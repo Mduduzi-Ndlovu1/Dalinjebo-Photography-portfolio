@@ -7,7 +7,7 @@ const Footer = () => {
     <footer id="contact">
       <div className="section__container footer__container">
         <div className="footer__col">
-          <img src="src\assets\RadientWhite.png" alt="logo" />
+          <img src="/assets/RadientWhite.png" alt="logo" />
           <div className="footer__socials">
             <a href="#"><RiFacebookFill /></a>
             <a href="#"><RiInstagramLine /></a>

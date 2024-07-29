@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="nav__header">
           <div className="nav__logo">
             <Link to="/">
-              <img src="src/assets/Dali Logo.png" alt="logo-white" />
+              <img src="assets/Dali Logo.png" alt="logo-white" />
             </Link>
           </div>
           <div className="nav__menu__btn" id="menu-btn" onClick={handleMenuToggle}>

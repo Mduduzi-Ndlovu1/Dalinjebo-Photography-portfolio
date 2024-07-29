@@ -1,355 +1,253 @@
-// Ancients Imports
-import F_a_1 from '/assets/Fashion/Ancients/A1.jpeg'
-import F_a_2 from '/assets/Fashion/Ancients/A2.jpeg'
-import F_a_3 from '/assets/Fashion/Ancients/A3.jpeg'
-import F_a_4 from '/assets/Fashion/Ancients/A4.jpeg'
-import F_a_5 from '/assets/Fashion/Ancients/A5.jpeg'
-import F_a_6 from '/assets/Fashion/Ancients/A6.jpeg'
-import F_a_7 from '/assets/Fashion/Ancients/A7.jpeg' 
 
-// Golden Horn imports
 
-// Corrected Import Statements
-import pb_k_1 from './Product Brand/Golden Horn/k1.jpeg';
-import pb_k_2 from '../Product Brand/Golden Horn/k2.jpeg';
-import pb_k_3 from '../Product Brand/Golden Horn/k3.jpeg';
-import pb_k_4 from '../Product Brand/Golden Horn/k4.jpeg';
-import pb_k_5 from '../Product Brand/Golden Horn/k5.jpeg';
-import pb_k_6 from '../Product Brand/Golden Horn/k6.jpeg';
-import pb_k_7 from '../Product Brand/Golden Horn/k7.jpeg';
-
-// Kallahari imports
-
-import pb_k_1 from './Product Brand/Golden Horn/k1.jpeg';
-import pb_k_2 from './Product Brand/Golden Horn/k2.jpeg';
-import pb_k_3 from './Product Brand/Golden Horn/k3.jpeg';
-import pb_k_4 from './Product Brand/Golden Horn/k4.jpeg';
-import pb_k_5 from './Product Brand/Golden Horn/k5.jpeg';
-import pb_k_6 from './Product Brand/Golden Horn/k6.jpeg';
-import pb_k_7 from './Product Brand/Golden Horn/k7.jpeg';
-
-const kallahariImages = [
-    pb_k_1,
-    pb_k_2,
-    pb_k_3,
-    pb_k_4,
-    pb_k_5,
-    pb_k_6,
-    pb_k_7
+const FashionImages = [
+    "public/assets/images/Fashion/Ancients/A1.jpeg",
+    "public/assets/images/Fashion/Ancients/A2.jpeg",
+    "public/assets/images/Fashion/Ancients/A3.jpeg",
+    "public/assets/images/Fashion/Ancients/A4.jpeg",
+    "public/assets/images/Fashion/Ancients/A5.jpeg",
+    "public/assets/images/Fashion/Ancients/A6.jpeg",
+    "public/assets/images/Fashion/Ancients/A7.jpeg"
 ]
 
 const goldenHornImages = [
-    pb_gh_1,
-    pb_gh_2,
-    pb_gh_3,
-    pb_gh_4,
-    pb_gh_5,
-    pb_gh_6
+    "public/assets/images/Product Brand/Golden Horn/gh1.jpeg",
+    "public/assets/images/Product Brand/Golden Horn/gh2.jpeg",
+    "public/assets/images/Product Brand/Golden Horn/gh3.jpeg",
+    "public/assets/images/Product Brand/Golden Horn/gh4.jpeg",
+    "public/assets/images/Product Brand/Golden Horn/gh5.jpeg",
+    "public/assets/images/Product Brand/Golden Horn/gh6.jpeg"
 ]
 
-const ancientsImages = [
-    F_a_1,
-    F_a_2,
-    F_a_3,
-    F_a_4,
-    F_a_5,
-    F_a_6,
-    F_a_7
+const kallahariImages = [
+    "public/assets/images/Product Brand/Kallahari/k1.jpeg",
+    "public/assets/images/Product Brand/Kallahari/k2.jpeg",
+    "public/assets/images/Product Brand/Kallahari/k3.jpeg",
+    "public/assets/images/Product Brand/Kallahari/k4.jpeg",
+    "public/assets/images/Product Brand/Kallahari/k5.jpeg",
+    "public/assets/images/Product Brand/Kallahari/k6.jpeg",
+    "public/assets/images/Product Brand/Kallahari/k7.jpeg"
 ]
 
-// self protrait imports
-// person 1
-import sp_p1_1 from './Self Portrait/Person One/IMG_1691.jpeg';
-import sp_p1_2 from './Self Portrait/Person One/IMG_1714.jpeg';
-import sp_p1_3 from './Self Portrait/Person One/IMG_1716.jpeg';
-import sp_p1_4 from './Self Portrait/Person One/IMG_1767.jpeg';
-import sp_p1_5 from './Self Portrait/Person One/IMG_1780.jpeg';
-import sp_p1_6 from './Self Portrait/Person One/IMG_1785.jpeg';
-import sp_p1_7 from './Self Portrait/Person One/IMG_1786.jpeg';
-import sp_p1_8 from './Self Portrait/Person One/IMG_1813.jpeg';
-import sp_p1_9 from './Self Portrait/Person One/IMG_1815.jpeg';
+const selfProtraitOneimages = [
+    "public/assets/images/Self Protrait/Person One/p1.jpeg",
+    "public/assets/images/Self Protrait/Person One/p2.jpeg",
+    "public/assets/images/Self Protrait/Person One/p3.jpeg",
+    "public/assets/images/Self Protrait/Person One/p4.jpeg",
+    "public/assets/images/Self Protrait/Person One/p5.jpeg",
+    "public/assets/images/Self Protrait/Person One/p6.jpeg",
+    "public/assets/images/Self Protrait/Person One/p7.jpeg",
+    "public/assets/images/Self Protrait/Person One/p8.jpeg",
+    "public/assets/images/Self Protrait/Person One/p9.jpeg"
+];
 
-
-
-// person 2
-
-import sp_p2_1 from './Self Portrait/Person two/IMG_1.jpeg';
-import sp_p2_2 from './Self Portrait/Person two/IMG_2.jpeg';
-import sp_p2_3 from './Self Portrait/Person two/IMG_3.jpeg';
-import sp_p2_4 from './Self Portrait/Person two/IMG_4.jpeg';
-import sp_p2_5 from './Self Portrait/Person two/IMG_1780.jpeg';
-import sp_p2_6 from './Self Portrait/Person two/IMG_1.jpeg';
-import sp_p2_7 from './Self Portrait/Person two/IMG_1.jpeg';
-import sp_p2_8 from './Self Portrait/Person two/IMG_1.jpeg';
-import sp_p2_9 from './Self Portrait/Person two/IMG_1.jpeg';
-import sp_p2_10 from './Self Portrait/Person two/IMG_1.jpeg';
-import sp_p2_11 from './Self Portrait/Person two/IMG_1.jpeg';
-
-// person 3
-import sp_p3_1 from './Self Protrait/Person three/1.jpeg';
-import sp_p3_2 from './Self Protrait/Person three/2.jpeg';
-import sp_p3_3 from './Self Protrait/Person three/3.jpeg';
-import sp_p3_4 from './Self Protrait/Person three/4.jpeg';
-import sp_p3_5 from './Self Protrait/Person three/5.jpeg';
-
-// person 4
-import sp_p4_1 from './Self Protrait/Person four/1.jpeg';
-import sp_p4_2 from './Self Protrait/Person four/2.jpeg';
-import sp_p4_3 from './Self Protrait/Person four/3.jpeg';
-import sp_p4_4 from './Self Protrait/Person four/4.jpeg';
-import sp_p4_5 from './Self Protrait/Person four/5.jpeg';
-import sp_p4_6 from './Self Protrait/Person four/6.jpeg';
-import sp_p4_7 from './Self Protrait/Person four/7.jpeg';
-
-//person 5
-
-import sp_p5_1 from './Self Protrait/Person five/1.jpeg';
-import sp_p5_2 from './Self Protrait/Person five/2.jpeg';   
-import sp_p5_3 from './Self Protrait/Person five/3.jpeg';
-import sp_p5_4 from './Self Protrait/Person five/4.jpeg';
-import sp_p5_5 from './Self Protrait/Person five/5.jpeg';
-import sp_p5_6 from './Self Protrait/Person five/6.jpeg';
-import sp_p5_7 from './Self Protrait/Person five/7.jpeg';
-import sp_p5_8 from './Self Protrait/Person five/8.jpeg';
-import sp_p5_9 from './Self Protrait/Person five/9.jpeg';
-import sp_p5_10 from './Self Protrait/Person five/10.jpeg';
-
-// person 6
-
-import sp_p6_1 from './Self Protrait/Person six/1.jpeg';
-import sp_p6_2 from './Self Protrait/Person six/2.jpeg';
-import sp_p6_3 from './Self Protrait/Person six/3.jpeg';
-import sp_p6_4 from './Self Protrait/Person six/4.jpeg';
-import sp_p6_5 from './Self Protrait/Person six/5.jpeg';
-import sp_p6_6 from './Self Protrait/Person six/6.jpeg';
-
-// wedding images
-
-// Matric Dance
-import md_1 from './Wedding/Matric Dance/md_1.jpeg';
-import md_2 from './Wedding/Matric Dance/md_2.jpeg';
-import md_3 from './Wedding/Matric Dance/md_3.jpeg';
-import md_4 from './Wedding/Matric Dance/md_4.jpeg';
-import md_5 from './Wedding/Matric Dance/md_5.jpeg';
-import md_6 from './Wedding/Matric Dance/md_6.jpeg';
-import md_7 from './Wedding/Matric Dance/md_7.jpeg';
-import md_8 from './Wedding/Matric Dance/md_8.jpeg';
-import md_9 from './Wedding/Matric Dance/md_9.jpeg';
-
-// Traditional Wedding One
-import t1_1_1 from './Wedding/Traditional One/T1.jpeg';
-import t1_1_2 from './Wedding/Traditional One/T2.jpeg';
-import t1_1_3 from './Wedding/Traditional One/T3.jpeg';
-import t1_1_4 from './Wedding/Traditional One/T4.jpeg';
-import t1_1_5 from './Wedding/Traditional One/T5.jpeg';
-import t1_1_6 from './Wedding/Traditional One/T6.jpeg';
-import t1_1_7 from './Wedding/Traditional One/T7.jpeg';
-import t1_1_8 from './Wedding/Traditional One/T8.jpeg';
-import t1_1_9 from './Wedding/Traditional One/T9.jpeg'; 
-import t1_1_10 from './Wedding/Traditional One/T10.jpeg'; 
-import t1_1_11 from './Wedding/Traditional One/T11.jpeg';
-import t1_1_12 from './Wedding/Traditional One/T12.jpeg';
-import t1_1_13 from './Wedding/Traditional One/T13.jpeg';
-
-// Traditional Wedding two
-import t2_2_1 from './Wedding/Traditional Two/t1.jpeg';
-import t2_2_2 from './Wedding/Traditional Two/t2.jpeg';
-import t2_2_3 from './Wedding/Traditional Two/t3.jpeg';
-import t2_2_4 from './Wedding/Traditional Two/t4.jpeg';
-import t2_2_5 from './Wedding/Traditional Two/t5.jpeg';
-import t2_2_6 from './Wedding/Traditional Two/t6.jpeg';
-import t2_2_7 from './Wedding/Traditional Two/t7.jpeg';
-import t2_2_8 from './Wedding/Traditional Two/t8.jpeg';
-import t2_2_9 from './Wedding/Traditional Two/t9.jpeg';
-
-// White wedding one
-import w1_1 from './Wedding/White One/W1.jpeg';
-import w1_2 from './Wedding/White One/W2.jpeg';
-import w1_3 from './Wedding/White One/W3.jpeg';
-import w1_4 from './Wedding/White One/W4.jpeg';
-import w1_5 from './Wedding/White One/W5.jpeg';
-import w1_6 from './Wedding/White One/W6.jpeg';
-
-// White weddings two
-import w2_1 from './Wedding/White Two/w1.jpeg';
-import w2_2 from './Wedding/White Two/w2.jpeg';
-import w2_3 from './Wedding/White Two/w3.jpeg';
-import w2_4 from './Wedding/White Two/w4.jpeg';
-import w2_5 from './Wedding/White Two/w5.jpeg';
-import w2_6 from './Wedding/White Two/w6.jpeg';
-import w2_7 from './Wedding/White Two/w7.jpeg';
-import w2_8 from './Wedding/White Two/w8.jpeg';
-import w2_9 from './Wedding/White Two/w9.jpeg';
-import w2_10 from './Wedding/White Two/w10.jpeg';
-import w2_11 from './Wedding/White Two/w11.jpeg';
-
-
-
-
-
-
-
-const sp_p1_images = [
-    sp_p1_1,
-    sp_p1_2,
-    sp_p1_3,
-    sp_p1_4,
-    sp_p1_5,
-    sp_p1_6,
-    sp_p1_7,
-    sp_p1_8,
-    sp_p1_9
+const selfProtraitTwoimages = [
+    "public/assets/images/Self Protrait/Person two/p2_1.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_2.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_3.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_4.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_5.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_6.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_7.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_8.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_9.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_10.jpeg",
+    "public/assets/images/Self Protrait/Person two/p2_11.jpeg"
+]
+const selfProtraitThreeimages = [
+    "public/assets/images/Self Protrait/Person three/p3_1.jpeg",
+    "public/assets/images/Self Protrait/Person three/p3_2.jpeg",
+    "public/assets/images/Self Protrait/Person three/p3_3.jpeg",
+    "public/assets/images/Self Protrait/Person three/p3_4.jpeg",
+    "public/assets/images/Self Protrait/Person three/p3_5.jpeg"
 ]
 
-const sp_p2_images = [
-    sp_p2_1,
-    sp_p2_2,
-    sp_p2_3,
-    sp_p2_4,
-    sp_p2_5,
-    sp_p2_6,
-    sp_p2_7,
-    sp_p2_8,
-    sp_p2_9,
-    sp_p2_10,
-    sp_p2_11
+const selfProtraitFourimages = [
+    "public/assets/images/Self Protrait/Person four/p4_1.jpeg",
+    "public/assets/images/Self Protrait/Person four/p4_2.jpeg",
+    "public/assets/images/Self Protrait/Person four/p4_3.jpeg",
+    "public/assets/images/Self Protrait/Person four/p4_4.jpeg",
+    "public/assets/images/Self Protrait/Person four/p4_5.jpeg",
+    "public/assets/images/Self Protrait/Person four/p4_6.jpeg",
+    "public/assets/images/Self Protrait/Person four/p4_7.jpeg",
+];
+
+const selfProtraitFiveimages = [
+    "public/assets/images/Self Protrait/Person five/p5_1.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_2.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_3.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_4.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_5.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_6.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_7.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_8.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_9.jpeg",
+    "public/assets/images/Self Protrait/Person five/p5_10.jpeg",
+
 ]
 
-const sp_p3_images = [
-    sp_p3_1,
-    sp_p3_2,
-    sp_p3_3,
-    sp_p3_4,
-    sp_p3_5
+const selfProtraitSiximages = [
+    "public/assets/images/Self Protrait/Person Six/p6_1.jpeg",
+    "public/assets/images/Self Protrait/Person Six/p6_2.jpeg",
+    "public/assets/images/Self Protrait/Person Six/p6_3.jpeg",
+    "public/assets/images/Self Protrait/Person Six/p6_4.jpeg",
+    "public/assets/images/Self Protrait/Person Six/p6_5.jpeg",
+    "public/assets/images/Self Protrait/Person Six/p6_6.jpeg"
 ]
-
-const sp_p4_images = [
-    sp_p4_1,
-    sp_p4_2,
-    sp_p4_3,
-    sp_p4_4,
-    sp_p4_5,
-    sp_p4_6,
-    sp_p4_7
-]
-
-const sp_p5_images = [
-    sp_p5_1,
-    sp_p5_2,
-    sp_p5_3,
-    sp_p5_4,
-    sp_p5_5,
-    sp_p5_6,
-    sp_p5_7,
-    sp_p5_8,
-    sp_p5_9,
-    sp_p5_10
-]
-
-const sp_p6_images = [
-    sp_p6_1,
-    sp_p6_2,
-    sp_p6_3,
-    sp_p6_4,
-    sp_p6_5,
-    sp_p6_6
-]
-
-
-
-
 
 const matricDanceImages = [
-    md_1,
-    md_2,
-    md_3,
-    md_4,
-    md_5,
-    md_6,
-    md_7,
-    md_8,
-    md_9
-]; 
+    "public/assets/images/Wedding/Matric Dance/m1.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m2.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m3.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m4.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m5.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m6.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m7.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m8.jpeg",
+    "public/assets/images/Wedding/Matric Dance/m9.jpeg",
+]
 
-const traditionalOneImages = [
-    t1_1_1,
-    t1_1_2,
-    t1_1_3,
-    t1_1_4,
-    t1_1_5,
-    t1_1_6,
-    t1_1_7,
-    t1_1_8,
-    t1_1_9,
-    t1_1_10,
-    t1_1_11,
-    t1_1_12
+const traditionalWedOne = [
+    "public/assets/images/Wedding/Traditional One/t1.jpeg",
+    "public/assets/images/Wedding/Traditional One/t2.jpeg",
+    "public/assets/images/Wedding/Traditional One/t3.jpeg",
+    "public/assets/images/Wedding/Traditional One/t4.jpeg",
+    "public/assets/images/Wedding/Traditional One/t5.jpeg",
+    "public/assets/images/Wedding/Traditional One/t6.jpeg",
+    "public/assets/images/Wedding/Traditional One/t7.jpeg",
+    "public/assets/images/Wedding/Traditional One/t8.jpeg",
+    "public/assets/images/Wedding/Traditional One/t9.jpeg",
+    "public/assets/images/Wedding/Traditional One/t10.jpeg",
+    "public/assets/images/Wedding/Traditional One/t11.jpeg",
+    "public/assets/images/Wedding/Traditional One/t12.jpeg",
+    "public/assets/images/Wedding/Traditional One/t13.jpeg"
 ];
 
-const traditionalTwoImages = [
-    t2_2_1,
-    t2_2_2,
-    t2_2_3,
-    t2_2_4,
-    t2_2_5,
-    t2_2_6,
-    t2_2_7,
-    t2_2_8,
-    t2_2_9
+const traditionalWedTwo = [
+    "public/assets/images/Wedding/Traditional Two/t2_1.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_2.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_3.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_4.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_5.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_6.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_7.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_8.jpeg",
+    "public/assets/images/Wedding/Traditional Two/t2_9.jpeg",
 ];
 
-const whiteWeddingsOneImages = [
-    w1_1,
-    w1_2,
-    w1_3,
-    w1_4,
-    w1_5,
-    w1_6
+const whiteWedOne = [
+    "public/assets/images/Wedding/White Wedding One/w1_1.jpeg",
+    "public/assets/images/Wedding/White weddings One/w1_2.jpeg",
+    "public/assets/images/Wedding/White weddings One/w1_3.jpeg",
+    "public/assets/images/Wedding/White weddings One/w1_4.jpeg",
+    "public/assets/images/Wedding/White weddings One/w1_5.jpeg",
+    "public/assets/images/Wedding/White weddings One/w1_6.jpeg"
+]
+
+const whiteWedTwo = [
+    "public/assets/images/Wedding/White weddings Two/w2_1.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_2.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_3.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_4.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_5.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_6.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_7.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_8.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_9.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_10.jpeg",
+    "public/assets/images/Wedding/White weddings Two/w2_11.jpeg"
 ];
 
-const whiteWeddingsTwoImages = [
-    w2_1,
-    w2_2,
-    w2_3,
-    w2_4,
-    w2_5,
-    w2_6,
-    w2_7,
-    w2_8,
-    w2_9,
-    w2_10,
-    w2_11
+const weddingPhotos = [
+    {
+        id: 1,
+        name: "Traditional Wedding",
+        images: traditionalWedOne,
+    },
+    {
+        id: 2,
+        name: "Traditional Wedding",
+        images: traditionalWedTwo,
+    },
+    {
+        id: 3,
+        name: "White Weddings",
+        images: whiteWedOne,
+    },
+    {
+        id: 4,
+        name: "White Weddings",
+        images: whiteWedTwo,
+    },
+    {
+        id: 5,
+        name: "Matric Dance",
+        images: matricDanceImages
+    },
 ];
 
-export const weddingImages = [
-    matricDanceImages,
-    traditionalOneImages,
-    traditionalTwoImages,
-    whiteWeddingsOneImages,
-    whiteWeddingsTwoImages
+const selfProtraitImages = [
+    {
+        id: 1,
+        name: "Self Protrait One",
+        images: selfProtraitOneimages,
+    },
+    {
+        id: 2,
+        name: "Self Protrait Two",
+        images: selfProtraitTwoimages,
+    },
+    {
+        id: 3,
+        name: "Self Protrait Three",
+        images: selfProtraitThreeimages,
+    },
+    {
+        id: 4,
+        name: "Self Protrait Four",
+        images: selfProtraitFourimages,
+    },
+    {
+        id: 5,
+        name: "Self Protrait Five",
+        images: selfProtraitFiveimages,
+    },
+    {
+        id: 6,
+        name: "Self Protrait Six",
+        images: selfProtraitSiximages,
+    },
+];
+
+const FashionAncientImages = [
+    {
+        id: 1,
+        name: "Ancients",
+        images: FashionImages,
+    }
+]
+
+const productBrands = [
+    {
+        id:1,
+        name: "Golden Horn",
+        images: goldenHornImages,
+    },
+    {
+        id:2,
+        name: "Kallahari",
+        images: kallahariImages,
+    }
+];
+
+
+
+const allImages = [
+    ...weddingPhotos,
+    ...productBrands,
+    ...selfProtraitImages,
+    ...FashionAncientImages
 ]
 
 
-
-export const selfProtraitImages = [
-    sp_p1_images,
-    sp_p2_images,
-    sp_p3_images,
-    sp_p4_images,
-    sp_p5_images,
-    sp_p6_images
-]
-
-export const productBrandImages = [
-    kallahariImages,
-    ancientsImages,
-    goldenHornImages
-]
-
-
-
-
-
-
-
-
+export default allImages;
