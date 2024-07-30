@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiFacebookFill, RiInstagramLine, RiTwitterFill, RiYoutubeFill, RiPinterestLine } from 'react-icons/ri';
+import { RiFacebookFill, RiInstagramLine, RiTwitterFill, RiYoutubeFill, RiPinterestLine, RiLinkedinFill, RiMailAddFill } from 'react-icons/ri';
 
 
 const Footer = () => {
@@ -9,20 +9,20 @@ const Footer = () => {
         <div className="footer__col">
           <img src="/assets/RadientWhite.png" alt="logo" />
           <div className="footer__socials">
-            <a href="#"><RiFacebookFill /></a>
-            <a href="#"><RiInstagramLine /></a>
-            <a href="#"><RiTwitterFill /></a>
-            <a href="#"><RiYoutubeFill /></a>
-            <a href="#"><RiPinterestLine /></a>
+            <a href="https://m.facebook.com/dali.ngene/"><RiFacebookFill /></a>
+            <a href="https://www.instagram.com/dalindyebo_/"><RiInstagramLine /></a>
+            <a href="https://za.linkedin.com/in/dalindyebo-ngene-442541203"><RiLinkedinFill /></a>
+            <a href="Dalingenedp@gmail.com"><RiMailAddFill /></a>
+            
           </div>
         </div>
         <div className="footer__col">
           <ul className="footer__links">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#service">SERVICES</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT US</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/portfolio">PORTFOLIO</a></li>
+            <li><a href="./contact">CONTACT US</a></li>
           </ul>
         </div>
         <div className="footer__col">

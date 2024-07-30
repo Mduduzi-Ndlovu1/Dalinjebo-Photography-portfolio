@@ -20,6 +20,11 @@ export const navlists = [
       name: "Portfolio",
       link: "/portfolio",
     },
+    {
+      id: 5,
+      name: "Contact Me",
+      link: "/contact",
+    },
   ];
   
   export default navlists;

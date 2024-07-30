@@ -61,7 +61,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className='flex-1 justify-center items-center p-5 h-full hidden lg:flex md:flex img'>
-        <img src="src/assets/Radient (1).png" alt="Radient imagery" />
+        <img src="/assets/aboutus.jpeg" alt="About Us" />
       </div>
 
     </div>

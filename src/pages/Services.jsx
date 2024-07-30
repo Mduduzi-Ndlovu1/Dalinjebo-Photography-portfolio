@@ -41,7 +41,10 @@ const Services = () => {
             <div className="service-content">
               <h2 className="service-title">{service.title}</h2>
               <p className="service-description">{service.description}</p>
+              <a href="/contact">
               <button className="btn btn--primary">Learn More</button>
+              
+              </a>
             </div>
           </div>
         ))}
