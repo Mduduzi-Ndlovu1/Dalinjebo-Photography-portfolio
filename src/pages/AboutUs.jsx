@@ -36,7 +36,7 @@ const AboutUs = () => {
     });
   }, []);
   return (
-    <section id="about" className='aboutUs'>
+    <section id="about" className='aboutUs mt-40'>
       <h2 className="section__header mt-6">
            ~ About Me ~
         </h2>

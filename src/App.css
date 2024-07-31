@@ -76,7 +76,7 @@ body {
 .header {
   min-height: 600px;
   background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),
-    url("assets/Logo and title.png");
+    url("./Logo and title.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -590,14 +590,14 @@ font-size: 3rem;
 }
 
 .swiper-slide img {
-  width: 60rem;
+  width: 37rem;
   height: 42rem;
   border-radius: 2rem;
   object-fit: cover;
 }
 
 .swiper_container {
-  height: auto;
+  height: 52rem;
   padding: 2rem 0;
   position: relative;
 }
@@ -610,11 +610,12 @@ font-size: 3rem;
 
 @media (max-width: 500px) {
   .swiper_container {
-    height: 47rem;
+    height: 47rem;   
   }
   .swiper-slide {
     width: 28rem !important;
     height: 36rem !important;
+    
   }
   .swiper-slide img {
     width: 28rem !important;
@@ -629,10 +630,15 @@ font-size: 3rem;
 
 .slider-controler {
   position: relative;
-  bottom: 4rem;
+  bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
 }
 
 
@@ -654,14 +660,14 @@ font-size: 3rem;
 @media (max-width: 990px) {
   .slider-controler .swiper-button-prev {
     left: 30% !important;
-    transform: translateX(-30%) !important;
+    transform: translateX(-80%) !important;
   }
 }
 
 @media (max-width: 450px) {
   .slider-controler .swiper-button-prev {
     left: 20% !important;
-    transform: translateX(-20%) !important;
+    transform: translateX(-80%) !important;
   }
 }
 
@@ -683,6 +689,8 @@ font-size: 3rem;
 .slider-controler .slider-arrow::after {
   content: '';
 }
+
+
 
 .section__header {
   text-align: center;
@@ -828,6 +836,55 @@ font-size: 3rem;
   margin-top: 0.5rem;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-image {
+    height: 20rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .service-image {
+    height: 15rem;
+  }
+
+  .service-content {
+    padding: 0.5rem;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+  }
+}
+
 .spinner {
   width: 40px;
   height: 40px;
@@ -858,6 +915,12 @@ font-size: 3rem;
   50% {
     transform: scale(1);
   }
+}
+
+.container{
+  max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
 }
 
 

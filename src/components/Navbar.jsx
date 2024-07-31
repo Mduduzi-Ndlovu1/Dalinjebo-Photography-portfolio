@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="header" id="home">
+    <header className='bg-black w-full' id="home">
       <nav>
         <div className="nav__header">
           <div className="nav__logo">

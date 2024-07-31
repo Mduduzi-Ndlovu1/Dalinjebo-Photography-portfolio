@@ -65,10 +65,10 @@ const Portfolio = () => {
 
   return (
     <div>
-      <h2 className="section__header mt-6">
+      <h2 className="section__header mt-10">
         ~ My Portfolio ~
       </h2>
-      <div className="section__container mt-[-20px] overflow-hidden">
+      <div className="section__container">
         {loading ? (
           <Spinner />
         ) : (
@@ -105,7 +105,7 @@ const Portfolio = () => {
                 <img
                   src={image.src}
                   alt={`${image.name} portfolio`}
-                  className="object-cover w-full h-full"
+                  
                 />
               </SwiperSlide>
             ))}

@@ -46,7 +46,8 @@ const Home = () => {
 
   return (
     <main>
-      <div className="section__container about__container" id="about">
+      <div className='header'></div>
+      <div className="section__container about__container mt-20" id="about">
         <h2 className="section__header">
            ~ WE CAPTURE THE MOMENTS ~
         </h2>
